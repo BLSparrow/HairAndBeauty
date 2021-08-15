@@ -1,0 +1,253 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.globalCommentPost {
+    display: flex;
+    align-content: center;
+    background: url('/startIMG/fonPost.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+a:focus {
+    outline: none;
+}
+
+img,
+object,
+embed {
+    max-width: 100%;
+    height: auto;
+}
+
+object,
+embed {
+    height: 100%;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+    max-width: none !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.hide {
+    display: none;
+}
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+textarea {
+    height: auto;
+    min-height: 50px;
+}
+
+select {
+    width: 100%;
+}
+
+.sectionBlog {
+    width: 100%;
+}
+
+.row {
+    display: flex; /* включение технологии flexbox */
+    flex-direction: row; /* колонки в ряду */
+    justify-content: space-around; /* колонки в центре контейнера */
+    flex-wrap: nowrap; /* держать колонки в ряду */
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.column {
+    display: flex; /* одинаковая высота колонок */
+    width: 85%; /* ширина одной колонки */
+}
+
+.card {
+    border: 1px solid #efefef;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(244, 244, 244, 0.7);
+    transition: all .3s ease;
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 80px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card-content {
+    padding: 0 20px;
+}
+
+a {
+    color: #444444;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.card-content .fa, span {
+    font-size: 100%;
+}
+
+.card h2 {
+    padding-top: 10px;
+    color: #f76270;
+    font-size: 130%;
+    line-height: 1.2;
+}
+
+.card p {
+    margin: 20px 0 30px;
+    color: #666666;
+
+}
+
+@media screen and  (max-width: 1280px){
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+}
+
+@media screen and  (max-width: 1200px){
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 50%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 20px 0;
+    }
+}
+
+@media screen and  (max-width: 880px) {
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 70%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 70%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .column {
+        flex-direction: column; /* в ряду останется одна колонка */
+        flex-wrap: wrap; /* разрешен перенос колонок */
+        width: 90%;
+        display: flex;
+        flex-flow: row wrap; /* флекс элементы заполняют собой строку (row) */
+    }
+
+    .card {
+        margin: 15px 0;
+    }
+}

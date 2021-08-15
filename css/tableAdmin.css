@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.table {
+    width: 40%;
+    border: none;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    background: #0a5d43;
+    color: #cacaca;
+}
+.table thead th {
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #f4f4f4;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.table tbody td {
+    text-align: center;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.table thead tr th:first-child, .table tbody tr td:first-child {
+    border-left: none;
+}
+.table thead tr th:last-child, .table tbody tr td:last-child {
+    border-right: none;
+}
+.table tbody tr:nth-child(even){
+    background-color: #00823a;
+}
+.subscribe{
+    color: #f4f4f4;
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+}
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+.dangerOff{
+    display: block;
+}
+.dangerOn{
+    display: none;
+}

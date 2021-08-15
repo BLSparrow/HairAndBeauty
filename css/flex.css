@@ -1,0 +1,90 @@
+.haircuts {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+.haircuts img {
+    width: 250px;
+}
+
+.hair {
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    margin: 25px;
+}
+
+.hair .text {
+    background-color: rgba(19, 148, 76, 0.3);
+    color: #f4f4f4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 18px;
+    padding: 5px;
+    width: 96%;
+}
+
+/*-----------------------------------------*/
+
+.hover-image-1 * {
+    box-sizing: border-box;
+}
+
+.hover-image-1 {
+    left: 20%;
+    margin: 10%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 0;
+}
+
+.hover-image-1 img {
+    width: 250px;
+    transition: all 0.5s ease 0s;
+}
+
+.hover-image-1:hover > img {
+    transform: scale(1.6, 1.6) rotate(-20deg);
+    opacity: 0.5;
+}
+
+.hover-image-1 a {
+    color: #f4f4f4;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    border: 4px solid #0a322a;
+    background-color: rgba(19, 148, 76, 0.8);
+    opacity: 0.8;
+    transform: scale(0);
+    padding: 20px;
+}
+
+.hover-image-1 a img {
+    width: 48px;
+}
+
+.hover-image-1 a i {
+    font-size: 48px;
+    color: #f4f4f4;
+}
+
+.hover-image-1 a:hover {
+    opacity: 1;
+}
+
+.hover-image-1:hover a {
+    transform: scale(1);
+}
+
+/*------------------------------------------------*/

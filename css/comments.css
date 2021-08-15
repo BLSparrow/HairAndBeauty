@@ -1,0 +1,40 @@
+.form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.nameComment input, .textComment textarea {
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.nameComment input::placeholder, .textComment textarea::placeholder{
+    color: #f4f4f4;
+}
+
+.nameComment input :focus {
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    background: rgba(3, 3, 3, .18);
+}
+
+.form h2 {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: #f4f4f4;
+}

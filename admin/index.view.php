@@ -1,0 +1,1 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/navbar.admin.php';
