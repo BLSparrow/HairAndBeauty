@@ -26,12 +26,7 @@
                     <td>
                         <details>
                             <summary><?= date("d.m.Y", strtotime($line['date'])); ?></summary>
-                            <?php
-                            $arr = $line['time_id'];
-                            $row = $dataTimetables->getWorkTime($arr);
-                            foreach ($row as $r):?>
-                                <p><?= substr($r->time, 0, -3); ?></p>
-                            <?php endforeach; ?>
+                                <p><?= substr($line['time'], 0, -3); ?></p>
                         </details>
                     </td>
                     <td><a class="subscribe" href="/timetables/new.php"><i class="fas fa-plus-square"></i></a></td>
@@ -39,7 +34,7 @@
                         <form action="/timetables/deleteTimetables.php" method="post">
                             <input type="hidden" name="id" value="<?= $line['id'] ?>">
                             <button class="subscribe" name="delete"
-                                    onclick="return confirm('Вы действительно хотите удалить это рассписание?');">
+                                    onclick="return confirm('Вы действительно хотите удалить это расписание?');">
                                 <i class="fas fa-minus-square"></i>
                             </button>
                         </form>

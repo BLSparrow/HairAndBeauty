@@ -6,17 +6,6 @@
     padding: 0;
 }
 
-.modal {
-    padding-top: 10%;
-    font-family: "Nunito";
-    width: 100%;
-    height: 100%;
-    background: url("/startIMG/FON.jpg");
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    background-size: cover;
-}
-
 .modal__text {
     font-size: 20px;
     padding: 20px;
@@ -157,14 +146,43 @@
     font-size: 30px;
 }
 
-.fon {
+.fon_nav {
     margin-top: -150px;
+    background: url('/startIMG/FON.jpg');
+}
+
+.fon_map {
+    margin-top: -150px;
+    background: url('/startIMG/fon_for_nav.jpg');
+}
+
+.fon_masters {
+    margin-top: -150px;
+    background: url('/startIMG/fon_for_nav3.jpg');
+}
+
+.fon_services {
+    margin-top: -150px;
+    background: url('/startIMG/fon_for_nav4.jpg');
+}
+
+.fon_hair {
+    margin-top: -150px;
+    background: url('/startIMG/fon_for_nav5.jpg');
+}
+
+.fon_blog {
+    margin-top: -170px;
+    background: url('/startIMG/fon_for_nav2.jpg');
+}
+
+.fon {
     width: 100%;
     height: 100vh;
-    background: url("/startIMG/FON.jpg");
     background-repeat: no-repeat;
-    background-clip: border-box;
+    background-position: center center;
     background-size: cover;
+    background-clip: border-box;
     text-transform: uppercase;
 }
 
@@ -177,6 +195,7 @@
     color: #f4f4f4;
 }
 
+
 .fon1 {
     width: 90%;
     height: 100vh;
@@ -184,14 +203,14 @@
 
 .info {
     padding: 10% 0;
-    font-size: 140%;
+    font-size: 120%;
     text-align: center;
 }
 
 .aboutUs {
     padding: 15% 0 0 20%;
     width: 80%;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .fon2 {
@@ -218,8 +237,10 @@
 
 .imgAddress {
     background-image: url('../startIMG/маник.jpg');
-    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
+    /*background-attachment: fixed;*/
+    background-size: cover;
     width: 100%;
     height: 100%;
 }
@@ -242,12 +263,6 @@
         padding: 10% 0 0 0;
         font-size: 150%;
         text-align: center;
-    }
-
-
-    .fon {
-        width: 100%;
-        height: 90vh;
     }
 
     .fon1 {
@@ -279,6 +294,48 @@
     }
 }
 
+@media screen and (max-width: 1366px) {
+    .aboutUs {
+        padding: 15% 0 0 10%;
+        width: 90%;
+        font-size: 150%;
+    }
+
+    .info {
+        padding: 10% 0 0 0;
+        font-size: 150%;
+        text-align: center;
+    }
+
+    .fon1 {
+        width: 95%;
+        height: 100vh;
+    }
+
+    .fon3 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .fon2 {
+        width: 100%;
+        height: 100vh;
+        font-size: 170%;
+    }
+
+    .fon2 h2 {
+        margin-bottom: 10%;
+    }
+
+    .generalAddress {
+        height: 400px;
+    }
+
+    .infoAddress {
+        font-size: 130%;
+    }
+}
+
 @media screen and (max-width: 1280px) {
     .aboutUs {
         padding: 15% 0 0 10%;
@@ -293,11 +350,6 @@
     .info {
         padding: 10% 0 0 0;
         text-align: center;
-    }
-
-    .fon {
-        width: 100%;
-        height: 100vh;
     }
 
     .fon1 {
@@ -346,12 +398,6 @@
         text-align: center;
     }
 
-
-    .fon {
-        width: 100%;
-        height: 90vh;
-    }
-
     .fon1 {
         width: 95%;
         height: 90vh;
@@ -381,54 +427,6 @@
     }
 }
 
-@media screen and (max-width: 1366px) {
-    .aboutUs {
-        padding: 15% 0 0 10%;
-        width: 90%;
-        font-size: 150%;
-    }
-
-    .info {
-        padding: 10% 0 0 0;
-        font-size: 150%;
-        text-align: center;
-    }
-
-
-    .fon {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .fon1 {
-        width: 95%;
-        height: 90vh;
-    }
-
-    .fon3 {
-        width: 100%;
-        height: 90vh;
-    }
-
-    .fon2 {
-        width: 100%;
-        height: 90vh;
-        font-size: 170%;
-    }
-
-    .fon2 h2 {
-        margin-bottom: 10%;
-    }
-
-    .generalAddress {
-        height: 400px;
-    }
-
-    .infoAddress {
-        font-size: 130%;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .aboutUs {
         padding: 15% 0 0 10%;
@@ -442,15 +440,9 @@
         text-align: center;
     }
 
-
-    .fon {
-        width: 100%;
-        height: 100vh;
-    }
-
     .fon1 {
         width: 95%;
-        height: 90vh;
+        height: 100vh;
     }
 
     .fon3 {
@@ -461,31 +453,12 @@
 
     .fon2 {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         font-size: 170%;
     }
 
     .fon2 h2 {
         margin-bottom: 10%;
-    }
-
-    .generalAddress {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .generalAddress div {
-        width: 100%;
-        float: none;
-    }
-
-    .imgAddress {
-        background-size: 100%;
-        width: 100%;
     }
 }
 
@@ -505,36 +478,126 @@
     }
 
     .info {
-        padding: 15% 0 0 0;
+        padding: 15% 0 10% 0;
         font-size: 130%;
         text-align: center;
     }
 
 
-    .fon {
+    .fon_nav {
         width: 100%;
-        height: 80vh;
+        height: 100%;
+        background: url('/startIMG/FON_767.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
     }
+
+    .fon_map {
+        width: 100%;
+        height: 100%;
+        background: url('/startIMG/fon_for_nav_767.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
+    }
+
+    .fon_masters {
+        width: 100%;
+        height: 100%;
+        background: url('/startIMG/fon_for_nav3_767.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
+    }
+
+    .fon_services {
+        width: 100%;
+        height: 100%;
+        background: url('/startIMG/fon_for_nav4_767.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
+    }
+
+    .fon_hair {
+        width: 100%;
+        height: 100%;
+        background: url('/startIMG/fon_for_nav5_767.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
+    }
+
+    .fon_blog {
+        width: 100%;
+        height: 100%;
+        background: url('/startIMG/fon_for_nav2_767.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
+    }
+
 
     .fon1 {
         width: 95%;
-        height: 90vh;
+        height: 100vh;
     }
 
     .fon3 {
         width: 100%;
         height: 100vh;
-        margin-bottom: 100px;
     }
 
     .fon2 {
         width: 100%;
-        height: 90vh;
+        height: 100vh;
         font-size: 170%;
     }
 
     .fon2 h2 {
         margin-bottom: 10%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .info {
+        padding: 25% 0 10% 0;
+        font-size: 110%;
+        text-align: center;
+    }
+
+    .btn5 {
+        width: 50%;
+        font-size: 18px;
+    }
+
+    .aboutUs {
+        padding: 15% 0 0 10%;
+        width: 90%;
+        font-size: 100%;
+    }
+
+    .fon1 {
+        width: 95%;
+        height: 100%;
+    }
+
+    .fon3 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .fon3 img {
+        width: 90%;
     }
 
     .generalAddress {
@@ -548,60 +611,7 @@
 
     .generalAddress div {
         width: 100%;
-        float: none;
-    }
-
-    .imgAddress {
-        background-size: 100%;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-
-    .info {
-        padding: 20% 0 0 0;
-        font-size: 110%;
-        text-align: center;
-    }
-
-    .btn5 {
-        width: 50%;
-        font-size: 18px;
-    }
-
-    .fon {
-        width: 100%;
-        height: 65vh;
-    }
-
-    .aboutUs {
-        padding: 15% 0 0 10%;
-        width: 90%;
-        font-size: 100%;
-    }
-
-    .fon1 {
-        width: 95%;
-        height: 65vh;
-    }
-
-    .fon3 {
-        width: 100%;
-        height: 65vh;
-    }
-
-    .fon3 div {
-        width: 100%;
-        text-align: center;
-    }
-
-    .fon3 img {
-        width: 100%;
-    }
-
-    .infoAddress {
-        font-size: 90%;
+        height: 100%;
     }
 
     .fon2 {
@@ -612,10 +622,10 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
 
     .info {
-        padding: 25% 0 0 0;
+        padding: 30% 0 10% 0;
         font-size: 110%;
         text-align: center;
     }
@@ -623,11 +633,6 @@
     .btn5 {
         width: 60%;
         font-size: 16px;
-    }
-
-    .fon {
-        width: 100%;
-        height: 65vh;
     }
 
     .aboutUs {
@@ -643,7 +648,57 @@
 
     .fon3 {
         width: 100%;
-        height: 58vh;
+        height: 100vh;
+    }
+
+    .fon3 div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .fon3 img {
+        width: 100%;
+    }
+
+    .infoAddress {
+        font-size: 110%;
+    }
+
+    .fon2 {
+        margin-top: 100px;
+        width: 100%;
+        height: 100vh;
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .info {
+        padding: 30% 0 10% 0;
+        font-size: 110%;
+        text-align: center;
+    }
+
+    .btn5 {
+        width: 60%;
+        font-size: 16px;
+    }
+
+    .aboutUs {
+        padding: 15% 0 0 10%;
+        width: 90%;
+        font-size: 100%;
+    }
+
+    .fon1 {
+        width: 95%;
+        height: 100%;
+    }
+
+    .fon3 {
+        width: 100%;
+        height: 55vh;
     }
 
     .fon3 div {
@@ -664,5 +719,13 @@
         width: 100%;
         height: 100vh;
         font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .info {
+        padding: 35% 0 10% 0;
+        font-size: 100%;
+        text-align: center;
     }
 }

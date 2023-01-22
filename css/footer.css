@@ -226,6 +226,50 @@
 
 }
 
+@media screen and (max-width: 420px) {
+   .footer-distributed .footer-center {
+        width: 70%;
+        font-size: 16px;
+    }
+    .footer-distributed .footer-right {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .footer-distributed .footer-center {
+        width: 70%;
+        font-size: 16px;
+    }
+    .footer-distributed .footer-right {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    .footer-distributed .footer-center {
+        width: 70%;
+        font-size: 16px;
+    }
+    .footer-distributed .footer-right {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .footer-distributed .footer-center {
+        width: 70%;
+        font-size: 16px;
+    }
+    .footer-distributed .footer-right {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .footer-distributed .footer-center {
         width: 70%;

@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/css/comments.css">
-<link rel="stylesheet" href="/css/comentMenu.scss">
+<link rel="stylesheet" href="/css/comentMenu.css">
 <link rel="stylesheet" href="/css/homePage.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
@@ -12,39 +12,11 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
 <div class="globalCommentPost">
-    <section style="width: 60%;" class="sectionBlog">
-        <div class="row" style="width: 70%;">
-            <div class="column">
-                <?php if ($post): ?>
-                    <div class="card">
-                        <div class="twentytwenty-container">
-                            <img src="/img/<?= $post->image1 ?>" alt="img">
-                            <img src="/img/<?= $post->image2 ?>" alt="img">
-                        </div>
-
-
-                        <div class="card-content">
-                            <h2><?= $post->title ?></h2>
-                            <p><?= $post->description ?></p>
-                        </div>
-
-                    </div>
-                <?php else: ?>
-                    <div style="color: red">Запрашиваемый ресурс не гайден...</div>
-                <?php endif; ?>
-            </div>
-        </div>
-
-
-    </section>
-
-
-    <div style="width: 50%;">
-        <div>
+    <br><br>
+    <div class="commentsP">
             <br>
             <a class="btn5 btn-one btnn" href="#">Оставить отзыв</a>
             <div class="block_with_text" style="display: none;">
-                <br><br>
 
                 <form class="form" action="/posts/insertCommentPost.php" method="post" enctype="multipart/form-data">
                     <h2>Оставьте отзыв</h2>
@@ -63,7 +35,9 @@
                         <textarea class="t" placeholder="Ваш отзыв" name="text" id="text" rows="3"></textarea>
                     </div>
                     <br>
-                    <button style=" border: none; outline: none; background: none; color: #f4f4f4; font-size: 20px" class="btn5 btn-one" type="submit" name="submit">Отправить</button>
+                    <button style=" border: none; outline: none; background: none; color: #f4f4f4; font-size: 20px"
+                            class="btn6 btn-one" type="submit" name="submit">Отправить
+                    </button>
                 </form>
 
             </div>
@@ -83,11 +57,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="/twentytwenty/js/jquery.event.move.js"></script>
 <script src="/twentytwenty/js/jquery.twentytwenty.js"></script>
-<script>
-    $(window).load(function () {
-        $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.7});
-    });
-</script>
 <script>
     $('.btnn').click(function () {
         $(".block_with_text").fadeToggle(500, "linear");

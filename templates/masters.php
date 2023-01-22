@@ -1,7 +1,7 @@
 <?php include $_SERVER["DOCUMENT_ROOT"] . "/bootstrap.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/templates/header.view.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/templates/nav.php"; ?>
-    <section class="fon">
+    <section class="fon fon_masters">
         <div class="info">
             <div class="info">
                 <h3>Наше мастера</h3><br>
@@ -34,5 +34,7 @@ include $_SERVER["DOCUMENT_ROOT"] . "/templates/nav.php"; ?>
             })();
         </script>
     </section>
-<?php include $_SERVER['DOCUMENT_ROOT'] . '/modern-slide-in/index.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.view.php';
+<div style="background: url('/startIMG/fonPost.jpg'); padding: 50px;">
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/modern-slide-in/index.php'; ?>
+</div>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/templates/footer.view.php'; ?>

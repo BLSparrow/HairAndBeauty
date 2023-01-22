@@ -1,4 +1,10 @@
 .post-wrap {
+    background: url("/startIMG/fonPost.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-clip: border-box;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

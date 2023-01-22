@@ -26,12 +26,8 @@ fclose($myFile); ?>
     .like {
         cursor: pointer;
     }
-
-    .fon {
-        margin-top: -175px;
-    }
 </style>
-<section class="fon">
+<section class="fon fon_blog">
     <div class="info">
         <div class="info">
             <h3>Наш БЛОГ</h3><br>
@@ -82,7 +78,7 @@ fclose($myFile); ?>
 
 
                             <div>
-                                <a href="/posts/newCommentPost.php?id=<?= $post->id ?>">
+                                <a class="btnnnn" href="javascript://">
                                     <i class="fa fa-comments-o"></i> <span><?= $post->comments_count ?></span>
                                 </a>
                             </div>
@@ -100,27 +96,68 @@ fclose($myFile); ?>
                         <h2><?= $post->title ?></h2>
                         <p><?= $post->description ?></p>
                     </div>
+                    <div class="comments_for_post" style="display: none">
+                        <?php $commentsPost = $dataPost->getAllCommentsPostId($post->id);
+                        if ($post->id): ?>
+                            <?php foreach ($commentsPost as $comment): ?>
+                                <div class="comment">
+                                    <h4><?= $comment->name ?></h4>
+                                    <p><?= $comment->text ?></p>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                        <a style="margin-left: 30%" class="btn5 btn-two btnnn" href="javascript://">Оставить отзыв</a>
+                    </div>
+                    <div class="block_with_text" style="display: none">
 
+                        <form class="form" action="/posts/insertCommentPost.php" method="post"
+                              enctype="multipart/form-data">
+                            <h2>Оставьте отзыв</h2>
 
+                            <div style="display: none">
+                                <label for="post_id"></label>
+                                <input type="number" id="post_id" name="post_id" value="<?= $post->id ?>">
+                            </div>
+
+                            <div class="nameComment">
+                                <label style="display: none" for="name">Ваше имя</label><br>
+                                <input placeholder="Имя" type="text" id="name" name="name">
+                            </div>
+                            <div class="textComment">
+                                <label style="display: none" for="text">Отзыв</label><br>
+                                <textarea placeholder="Ваш отзыв" name="text" id="text" rows="3"></textarea>
+                            </div>
+                            <br>
+                            <button onclick="alert('Ваш отзыв отправлен на обработку')" style=" border: none; outline: none; background: none; color: #CD9A7B; font-size: 20px; padding: 10px"
+                                    class="btn6 btn-two" type="submit" name="submit">Отправить
+                            </button>
+                        </form>
+
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>
     </div>
 
-
 </section>
-
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="/twentytwenty/js/jquery.event.move.js"></script>
 <script src="/twentytwenty/js/jquery.twentytwenty.js"></script>
 <script>
+
+    $('.btnnn').click(function () {
+        $(".block_with_text").fadeToggle(500, "linear");
+    });
+    $('.btnnnn').click(function () {
+        $(".comments_for_post").fadeToggle(500, "linear");
+    });
+
     $(window).load(function () {
         $(".twentytwenty-container").twentytwenty({default_offset_pct: 0.7});
     });
 
-
     $(document).ready(function () {
-        $('.iconLike').css('color', '#a1a19c');
+        $('.iconLike').css('color', '#676B65');
         $(".like").bind("click", function () {
             var link = $(this);
             var id = link.data('id');

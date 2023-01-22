@@ -1,6 +1,6 @@
 <?php include $_SERVER["DOCUMENT_ROOT"] . "/templates/recordingMenu.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/templates/comentMenu.php"; ?>
-<link rel="stylesheet" href="/css/scrollDown.scss">
+<link rel="stylesheet" href="/css/scrollDown.css">
 <link rel="stylesheet" href="/css/style.css">
 <script src="/js/modernizr.js"></script>
 <section class="generalNav">

@@ -12,6 +12,6 @@
         </div>
         <br>
 
-        <button class="btn5 btn-one" style=" border: none; outline: none; background: none; color: #f4f4f4; font-size: 20px" type="submit" name="submit">Отправить</button>
+        <button onclick="alert('Ваш отзыв отправлен на обработку')" class="btn5 btn-one" style=" border: none; outline: none; background: none; color: #f4f4f4; font-size: 20px" type="submit" name="submit">Отправить</button>
     </form>
 </div>

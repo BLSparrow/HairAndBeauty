@@ -3,10 +3,10 @@ include $_SERVER["DOCUMENT_ROOT"] . "/bootstrap.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/templates/header.view.php";
 include $_SERVER["DOCUMENT_ROOT"] . "/templates/nav.php"; ?>
     <link rel="stylesheet" href="/css/map.css">
-    <section class="fon">
+    <section class="fon fon_map">
         <div class="info">
             <div class="info">
-                <h3>Наше расположение</h3><br>
+                <h3>Наше расположение</h3>
                 <p>Не можете нас найти?<br>Посмотрите на карту!</p>
             </div>
         </div>

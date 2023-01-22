@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/recordingMenu.scss">
+<link rel="stylesheet" href="/css/recordingMenu.css">
 <div class="btn5 btn-two pushmenu pushmenu2">
     <span>Онлайн запись</span>
 </div>

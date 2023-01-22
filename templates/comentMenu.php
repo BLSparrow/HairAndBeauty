@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/css/comentMenu.scss">
+<link rel="stylesheet" href="/css/comentMenu.css">
 <div class="pushmenu1 pushmenu3">
     <button class="pulse-button"><i class="fas fa-comment-alt"></i></button>
 </div>

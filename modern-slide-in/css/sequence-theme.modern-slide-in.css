@@ -44,7 +44,7 @@ html,
   /* Hide anything that goes beyond the boundaries of the Sequence container */
   overflow: hidden;
   /* Center the Sequence container on the page */
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0;
 }
 

@@ -16,7 +16,7 @@ if ($user->role != "Admin") {
     }
 </style>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-<link rel="stylesheet" href="/css/navbarAdmin.scss">
+<link rel="stylesheet" href="/css/navbarAdmin.css">
 
 <div class="container">
     <div class="card">

@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['msg'] = 'Файл успешно создан';
         $_SESSION['alert'] = 'alert-success';
         $dataPost->addCommentPost($data);
-        header('Location:/');
+        header('Location:/templates/blog.php');
     } else {
         $_SESSION['msg'] = $error;
         $_SESSION['alert'] = 'alert-danger';

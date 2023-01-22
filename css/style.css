@@ -208,7 +208,6 @@ Main components
     top: 0;
     height: 100%;
     width: 100%;
-    padding: 80px 5%;
     z-index: 43;
     background: url("/startIMG/FON5.jpg");
     background-repeat: no-repeat;
@@ -257,6 +256,9 @@ Main components
 @media screen and (max-width: 768px) {
     .mobile {
         display: block;
+    }
+    .navbar{
+        display: none;
     }
 }
 

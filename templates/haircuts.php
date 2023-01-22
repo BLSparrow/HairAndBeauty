@@ -8,7 +8,12 @@
         box-sizing: border-box;
     }
     .portfolio-wrap {
-        max-width: 1120px;
+        background: url("/startIMG/fonPost.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-clip: border-box;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -129,7 +134,7 @@
         }
     }
 </style>
-    <section class="fon">
+    <section class="fon fon_hair">
         <div class="info">
             <div class="info">
                 <h3></h3><br>

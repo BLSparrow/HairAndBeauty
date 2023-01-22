@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" type="image/x-icon" href="/startIMG/logoUp.png">
-    <link rel="stylesheet" type="text/css" href="/css/newNav.scss">
+    <link rel="stylesheet" href="/css/newNav.css">
     <link rel="stylesheet" type="text/css" href="/css/homePage.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/flex.css">

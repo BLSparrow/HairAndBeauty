@@ -3,7 +3,7 @@
 <?php include $_SERVER["DOCUMENT_ROOT"] . "/templates/nav.php"; ?>
     <link rel="stylesheet" href="/css/services.css">
 
-    <section class="fon">
+    <section class="fon fon_services">
         <div class="info">
             <div class="info">
                 <h3>Наши услуги</h3><br>

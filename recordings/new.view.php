@@ -13,73 +13,86 @@
         <form action="/recordings/insertRecording.php" method="post" enctype="multipart/form-data">
             <div id="rec">
 
-                <details>
-                    <summary>Мастер</summary>
-                    <?php function array_group_by($data, $key)
-                    {
-                        $result = [];
-                        foreach ($data as $item) {
-                            $result[$item[$key]][] = $item;
-                        }
-                        return $result;
-                    }
+<!--                <div>-->
+<!--                    --><?php //foreach ($timesTable as $item): ?>
+<!--                        <div>-->
+<!--                            <img style="width: 200px;" src="/img/--><?php //= $item['imgMasters'] ?><!--" alt="img">-->
+<!--                            <p>--><?php //= $item['nameMasters'] ?><!--</p>-->
+<!---->
+<!--                            <label for="master_id"></label>-->
+<!--                            <input type="text" name="master_id" id="master_id" value="--><?php //= $item['idMasters'] ?><!--">-->
+<!--                            <div>-->
+<!--                                <p>--><?php //= $item['date'] ?><!--</p>-->
+<!--                                <label class="radio-control">-->
+<!--                                    <input type="radio" name="time_tables_id" id="time_tables_id" value="--><?php //= $item['id'] ?><!--">-->
+<!--                                    <div class="radio-input">-->
+<!--                                        <span>--><?php //= $item['time'] ?><!--</span>-->
+<!--                                    </div>-->
+<!--                                </label>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    --><?php //endforeach; ?>
+<!--                </div>-->
 
-                    $group_key = 'idMasters';
-
-                    $data = array_group_by($timesTable, $group_key);
-
-                    foreach ($data as $key => $list):?>
-                        <div class="cardMasters">
-
-                            <div style="display: none">
-                                <label for="id_master"></label>
-                                <input type="text" name="id_master" id="id_master" value="<?= $key ?>">
-                            </div>
-
-
-                            <img src="/img/<?= $list[0]['imgMasters'] ?>" alt="img">
-
-                            <span><?= $list[0]['nameMasters'] ?></span>
-
-                            <?php foreach ($list as $line): ?>
-
-                                <?php if (date("m.d.y", strtotime($line['date'])) >= date('m.d.y')): ?>
-
-                                    <div style="display: none">
-                                        <label for="date_reg"></label>
-                                        <input type="text" name="date_reg" id="date_reg" value="<?= $line['date'] ?>">
-                                    </div>
-
-                                    <details style="width: 95%;">
-                                        <summary><?= date("d.m.Y", strtotime($line['date'])); ?></summary>
-                                        <div class="radio-form">
-                                            <?php
-                                            $arr = $line['time_id'];
-                                            $row = $dataTimetables->getWorkTime($arr);
-                                            foreach ($row as $r):?>
-                                                <?php $recording = $dataRecord->getRecordingDate($r->id, $line['date'],$key);
-
-                                                if (!$recording):?>
-                                                    <div class="radio-form">
-                                                        <label class="radio-control">
-                                                            <input type="radio" name="id_time" id="id_time"
-                                                                   value="<?= $r->id ?>">
-                                                            <div class="radio-input">
-                                                                <span><?= substr($r->time, 0, -3) ?></span>
-                                                            </div>
-                                                        </label>
-                                                    </div>
-                                                <?php endif; ?>
-                                            <?php endforeach; ?>
-                                        </div>
-                                    </details>
-                                <?php endif; ?>
-                            <?php endforeach; ?>
-
-                        </div>
-
-                    <?php endforeach; ?>
-                </details>
+<!--                <details>-->
+<!--                    <summary>Мастер</summary>-->
+<!--                    --><?php //function array_group_by($data, $key)
+//                    {
+//                        $result = [];
+//                        foreach ($data as $item) {
+//                            $result[$item[$key]][] = $item;
+//                        }
+//                        return $result;
+//                    }
+//
+//                    $group_key = 'idMasters';
+//
+//                    $data = array_group_by($timesTable, $group_key);
+//
+//                    foreach ($data as $key => $list):?>
+<!--                        <div class="cardMasters">-->
+<!---->
+<!--                            <img src="/img/--><?//= $list[0]['imgMasters'] ?><!--" alt="img">-->
+<!---->
+<!--                            <span>--><?//= $list[0]['nameMasters'] ?><!--</span>-->
+<!---->
+<!--                            --><?php //foreach ($list as $line): ?>
+<!---->
+<!--                                --><?php //if (date("m.d.y", strtotime($line['date'])) >= date('m.d.y')): ?>
+<!---->
+<!--                                    <div style="display: none">-->
+<!--                                        <label for="email"></label>-->
+<!--                                        <input type="text" name="email" id="email" value="--><?//= $line['email'] ?><!--">-->
+<!--                                    </div>-->
+<!---->
+<!--                                    <details style="width: 95%;">-->
+<!--                                        <summary>--><?//= date("d.m.Y", strtotime($line['date'])); ?><!--</summary>-->
+<!--                                        <div class="radio-form">-->
+<!--                                                                                        --><?php ////$recording = $dataRecord->getRecordingDate($line['id'], $line['date'], $key);
+//                                            //                                            if (!$recording):?>
+<!--                                            <div class="radio-form">-->
+<!---->
+<!--                                                <div style="display: ">-->
+<!--                                                    <label for="master_id"></label>-->
+<!--                                                    <input type="text" name="master_id" id="master_id" value="--><?//= $line['master_id'] ?><!--">-->
+<!--                                                </div>-->
+<!---->
+<!--                                                <label class="radio-control">-->
+<!--                                                    <input type="radio" name="time_tables_id" id="time_tables_id"-->
+<!--                                                           value="--><?//= $line['id'] ?><!--">-->
+<!--                                                    <div class="radio-input">-->
+<!--                                                        <span>--><?//= substr($line['time'], 0, -3) ?><!--</span>-->
+<!--                                                    </div>-->
+<!--                                                </label>-->
+<!--                                            </div>-->
+<!--                                            <!                                         --><?php ////endif; ?>
+<!--                                        </div>-->
+<!--                                    </details>-->
+<!--                                --><?php //endif; ?>
+<!--                            --><?php //endforeach; ?>
+<!--                        </div>-->
+<!--                    --><?php //endforeach; ?>
+<!--                </details>-->
 
 
                 <details>
@@ -153,6 +166,13 @@
     <!---------------------------------------------------------------------------->
 
     <script>
+
+        // $('#id_time').on('click', function () {
+        //     let master = $(this).attr('data-master');
+        //     let date = $(this).attr('data-date');
+        //     $('#id_master').val(master);
+        //     $('#date_reg').val(date);
+        // });
 
         function hideshow() {
             document.getElementById("rec").style = "display:none";

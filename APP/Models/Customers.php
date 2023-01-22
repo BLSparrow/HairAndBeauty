@@ -15,8 +15,7 @@ class Customers
 
     public function getAllCustomers()
     {
-        $stmt = $this->pdo->query('SELECT customers.*, masters.name as nameMasters FROM customers
-                                            INNER JOIN masters ON customers.id_master = masters.id');
+        $stmt = $this->pdo->query('SELECT * FROM customers');
         return $stmt->fetchAll();
     }
 
@@ -36,24 +35,22 @@ class Customers
 
     public function addCustomer($data)
     {
-        $stmt = $this->pdo->prepare('INSERT INTO customers (name, telephone, id_master)
-                VALUES (:name, :telephone, :id_master)');
+        $stmt = $this->pdo->prepare('INSERT INTO customers (name, telephone)
+                VALUES (:name, :telephone)');
         $stmt->execute([
             'name' => $data['name'],
             'telephone' => $data['telephone'],
-            'id_master' => $data['id_master'],
         ]);
         return $this->pdo->lastInsertId();
     }
 
     public function updateCustomer($data)
     {
-        $stmt = $this->pdo->prepare('UPDATE customers SET name=:name, telephone=:telephone, id_master=:id_master WHERE id=:id');
+        $stmt = $this->pdo->prepare('UPDATE customers SET name=:name, telephone=:telephone WHERE id=:id');
         $stmt->execute([
             'id' => $data['id'],
             'name' => $data['name'],
             'telephone' => $data['telephone'],
-            'id_master' => $data['id_master'],
         ]);
     }
 
