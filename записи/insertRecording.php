@@ -32,12 +32,12 @@ if (isset($_POST['submit'])) {
 //        $mail->isSMTP();                                      // Set mailer to use SMTP
 //        $mail->Host = 'smtp.mail.ru';
 //        $mail->SMTPAuth = true;                               // Enable SMTP authentication
-//        $mail->Username = 'hair.beauty.salon@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-//        $mail->Password = 'iRARyRtpo81%'; // Ваш пароль от почты с которой будут отправляться письма
+//        $mail->Username = '****************'; // Ваш логин от почты с которой будут отправляться письма
+//        $mail->Password = '****************%'; // Ваш пароль от почты с которой будут отправляться письма
 //        $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 //        $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 //
-//        $mail->setFrom('hair.beauty.salon@mail.ru'); // от кого будет уходить письмо?
+//        $mail->setFrom('************************'); // от кого будет уходить письмо?
 //        $mail->addAddress($email);     // Кому будет уходить письмо
 //        $mail->isHTML(true);
 //
